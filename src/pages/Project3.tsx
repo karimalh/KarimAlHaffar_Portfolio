@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { ArrowLeft, Github, ExternalLink, Calendar, Users, Cpu } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { asset } from "@/utils/asset";
 
 const Project3 = () => {
   useEffect(() => {
@@ -66,7 +67,7 @@ const Project3 = () => {
             <div className="max-w-6xl mx-auto">
               <div className="aspect-video bg-muted rounded-lg overflow-hidden animate-slide-up">
                 <img 
-                  src="/lovable-uploads/4d253728-54a7-4003-a499-805fc58b44ef.png" 
+                  src={asset("lovable-uploads/4d253728-54a7-4003-a499-805fc58b44ef.png")}
                   alt="3DoF Robotic Arm with LEGO figure chair"
                   className="w-full h-full object-cover"
                 />
@@ -157,7 +158,7 @@ const Project3 = () => {
                     </p>
                     <div className="rounded-lg overflow-hidden">
                       <img 
-                        src="/lovable-uploads/6a6745c8-0f02-4a0e-8708-b7abb01e4bc4.png" 
+                        src={asset("lovable-uploads/6a6745c8-0f02-4a0e-8708-b7abb01e4bc4.png")}
                         alt="Kinematics calculations and code"
                         className="w-full"
                       />
@@ -171,7 +172,7 @@ const Project3 = () => {
                     </p>
                     <div className="rounded-lg overflow-hidden">
                       <img 
-                        src="/lovable-uploads/e5e9ceb8-273b-4bc9-b9c0-ab5bb6a97be1.png" 
+                        src={asset("lovable-uploads/e5e9ceb8-273b-4bc9-b9c0-ab5bb6a97be1.png")}
                         alt="Robotic arm workspace envelope"
                         className="w-full"
                       />
@@ -186,14 +187,14 @@ const Project3 = () => {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="rounded-lg overflow-hidden">
                         <img 
-                          src="/lovable-uploads/1eb6c68e-5abb-4fa9-acf9-23e1dddbe556.png" 
+                          src={asset("lovable-uploads/1eb6c68e-5abb-4fa9-acf9-23e1dddbe556.png")} 
                           alt="LabVIEW user interface"
                           className="w-full"
                         />
                       </div>
                       <div className="rounded-lg overflow-hidden">
                         <img 
-                          src="/lovable-uploads/1f2602c3-a1dd-434c-b193-1d1dd1450f0c.png" 
+                          src={asset("lovable-uploads/1f2602c3-a1dd-434c-b193-1d1dd1450f0c.png")}
                           alt="LabVIEW code implementation"
                           className="w-full"
                         />
