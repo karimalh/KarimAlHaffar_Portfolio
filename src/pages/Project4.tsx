@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { asset } from "@/utils/asset";
 
 const Project4 = () => {
   const navigate = useNavigate();
@@ -69,7 +70,7 @@ const Project4 = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <img
-              src="/lovable-uploads/163f0b21-bc2c-4059-b32e-b97db3f516da.png"
+              src={asset("lovable-uploads/163f0b21-bc2c-4059-b32e-b97db3f516da.png")}
               alt="Building a Tricycle - Team photo with completed tricycle"
               className="w-full rounded-lg shadow-2xl"
             />
@@ -128,7 +129,7 @@ const Project4 = () => {
                       We used the front section of a children's bicycle as our starting point.
                     </p>
                     <img
-                      src="/lovable-uploads/801ca8fa-3c93-4a4c-afaa-a202fe234543.png"
+                      src={asset("lovable-uploads/801ca8fa-3c93-4a4c-afaa-a202fe234543.png")}
                       alt="Tricycle in workshop setting"
                       className="w-full rounded-lg shadow-lg mb-6"
                     />
@@ -140,7 +141,7 @@ const Project4 = () => {
                       We welded and assembled the remaining frame to meet the required dimensions and ensure stability.
                     </p>
                     <img
-                      src="/lovable-uploads/271c4c17-6d06-464a-9b89-816e0a1df51f.png"
+                      src={asset("lovable-uploads/271c4c17-6d06-464a-9b89-816e0a1df51f.png")}
                       alt="Custom Frame Construction"
                       className="w-1/2 rounded-lg shadow-lg mb-6"
                     />
@@ -152,7 +153,7 @@ const Project4 = () => {
                       We focused on balancing the tricycle and used force-body diagrams to avoid overstressing any parts of the frame.
                     </p>
                     <img
-                      src="/lovable-uploads/7439657d-b37c-4d9e-b489-d6cc7e165934.png"
+                      src={asset("lovable-uploads/7439657d-b37c-4d9e-b489-d6cc7e165934.png")}
                       alt="Balancing and Force Analysis"
                       className="w-full rounded-lg shadow-lg"
                     />
@@ -166,7 +167,7 @@ const Project4 = () => {
                   This was part of a class competition, and at the end of the project, we raced our tricycles. Our team placed second overall!
                 </p>
                 <img
-                  src="/lovable-uploads/163f0b21-bc2c-4059-b32e-b97db3f516da.png"
+                  src={asset("lovable-uploads/163f0b21-bc2c-4059-b32e-b97db3f516da.png")}
                   alt="Team with completed tricycle"
                   className="w-full rounded-lg shadow-lg"
                 />
