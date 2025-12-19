@@ -8,7 +8,7 @@ const CADProjects = () => {
       title: "Electric Toothbrush — Reverse Engineering & CAD Assembly",
       description: "Reverse engineered an electric toothbrush by modeling each component in SOLIDWORKS and creating a functional assembly with complex mates and motion studies.",
       skills: ["SolidWorks", "Reverse Engineering", "Motion Studies", "Assembly Design"],
-      image: "/lovable-uploads/tooth-brush-hero.gif",
+      image: "lovable-uploads/tooth-brush-hero.gif",
       projectUrl: "/cad-project-1",
       comingSoon: false
     },
@@ -17,7 +17,7 @@ const CADProjects = () => {
       title: "Stirling Engine — CAD Assembly from Provided Drawings",
       description: "CAD modeling of a Stirling Engine using detailed part drawings. Each component was modeled in SOLIDWORKS and assembled into a working system with constraints and mates applied to replicate real-world movement.",
       skills: ["SolidWorks", "CAD Assembly", "Engineering Drawings", "Motion Studies"],
-      image: "/lovable-uploads/stirling-engine.gif",
+      image: "lovable-uploads/stirling-engine.gif",
       projectUrl: "/cad-project-2",
       comingSoon: false
     }
