@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import { asset } from "@/utils/asset";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -14,7 +15,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6 max-w-4xl mx-auto">
             <img 
-              src="/lovable-uploads/961a396f-bf37-4259-afac-64ab63287de9.png" 
+              src={asset("lovable-uploads/961a396f-bf37-4259-afac-64ab63287de9.png")} 
               alt="Karim Al-Haffar professional headshot"
               className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl object-cover shadow-lg animate-scale-in flex-shrink-0"
             />
