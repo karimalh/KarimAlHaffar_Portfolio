@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { asset } from "@/utils/asset";
 
 const Project7 = () => {
   useEffect(() => {
@@ -27,7 +28,7 @@ const Project7 = () => {
           {/* Hero Image */}
           <div className="mb-8 rounded-lg overflow-hidden">
             <img 
-              src="/lovable-uploads/074bdc4e-efe8-4020-b28d-63b09a0ca5b7.png" 
+              src={asset("lovable-uploads/074bdc4e-efe8-4020-b28d-63b09a0ca5b7.png")}
               alt="Fingerprint Locked Snack Box"
               className="w-full h-[400px] object-cover"
             />
@@ -118,7 +119,7 @@ const Project7 = () => {
               </p>
               <div className="rounded-lg overflow-hidden mb-6">
                 <img 
-                  src="/lovable-uploads/8e3acc48-6cdc-4e5b-a82b-50124b669e54.png" 
+                  src={asset("lovable-uploads/8e3acc48-6cdc-4e5b-a82b-50124b669e54.png")}
                   alt="3D CAD model of the snack box design"
                   className="w-full h-[300px] object-contain bg-gray-50"
                 />
@@ -133,7 +134,7 @@ const Project7 = () => {
               </p>
               <div className="rounded-lg overflow-hidden mb-6">
                 <img 
-                  src="/lovable-uploads/7fc5bbfe-60c1-42ae-b967-077be2e72cc6.png" 
+                  src={asset("lovable-uploads/7fc5bbfe-60c1-42ae-b967-077be2e72cc6.png")} 
                   alt="Circuit diagram showing ESP32, servo motors, DHT11 sensor, and fingerprint sensor connections"
                   className="w-full h-[400px] object-contain bg-white"
                 />
@@ -159,14 +160,14 @@ const Project7 = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="rounded-lg overflow-hidden">
                   <img 
-                    src="/lovable-uploads/074bdc4e-efe8-4020-b28d-63b09a0ca5b7.png" 
+                    src={asset("lovable-uploads/074bdc4e-efe8-4020-b28d-63b09a0ca5b7.png")}
                     alt="Cardboard prototype of the fingerprint locked snack box"
                     className="w-full h-[250px] object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden">
                   <img 
-                    src="/lovable-uploads/16111459-7462-480b-95a2-49c38d93c742.png" 
+                    src={asset("lovable-uploads/16111459-7462-480b-95a2-49c38d93c742.png")}
                     alt="Fingerprint sensor and control buttons on the box"
                     className="w-full h-[250px] object-cover"
                   />
@@ -175,7 +176,7 @@ const Project7 = () => {
               
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="/lovable-uploads/60bdc89d-c2f1-4077-b4c9-0edb43389b4d.png" 
+                  src={asset("lovable-uploads/60bdc89d-c2f1-4077-b4c9-0edb43389b4d.png")}
                   alt="Inside view of the box showing servo motors and electronic components"
                   className="w-full h-[300px] object-cover"
                 />
