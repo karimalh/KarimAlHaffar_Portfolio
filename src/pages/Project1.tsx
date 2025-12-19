@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { asset } from "@/utils/asset";
 
 const Project1 = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Project1 = () => {
               {/* Main Project Image */}
               <div className="mb-12">
                 <img 
-                  src="/lovable-uploads/db411516-f38f-4da7-8ec4-2c9ae4721f61.png" 
+                  src={asset("lovable-uploads/db411516-f38f-4da7-8ec4-2c9ae4721f61.png")}
                   alt="FX-656 Reload Simulator"
                   className="w-full rounded-lg shadow-lg"
                 />
@@ -126,7 +127,7 @@ const Project1 = () => {
                 {/* CAD Picture */}
                 <div className="mb-8">
                   <img 
-                    src="/lovable-uploads/86e6fc85-632f-46ff-a865-35051eb7f7f4.png" 
+                    src={asset("lovable-uploads/86e6fc85-632f-46ff-a865-35051eb7f7f4.png")}
                     alt="Reload Simulator CAD Assembly"
                     className="w-full rounded-lg shadow-lg"
                   />
@@ -135,7 +136,7 @@ const Project1 = () => {
                 {/* Wiring Diagram */}
                 <div className="mb-8">
                   <img 
-                    src="/lovable-uploads/8179e531-a807-468c-ace4-9afdc21ff6a1.png" 
+                    src={asset("lovable-uploads/8179e531-a807-468c-ace4-9afdc21ff6a1.png")}
                     alt="Arduino Wiring Diagram"
                     className="w-full rounded-lg shadow-lg"
                   />
@@ -179,7 +180,7 @@ const Project1 = () => {
                 {/* Flow Diagram */}
                 <div className="mb-8">
                   <img 
-                    src="/lovable-uploads/f852adb7-d773-459b-a172-127d5fc54f84.png" 
+                    src={asset("lovable-uploads/f852adb7-d773-459b-a172-127d5fc54f84.png")}
                     alt="Control Logic Flow Diagram"
                     className="w-full rounded-lg shadow-lg"
                   />
@@ -229,7 +230,7 @@ const Project1 = () => {
               {/* Results Graph */}
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/efc8c79c-6bcd-4399-b8ad-e5291e25e388.png" 
+                  src={asset("lovable-uploads/efc8c79c-6bcd-4399-b8ad-e5291e25e388.png")}
                   alt="Trials Compared to Actual Graph Results"
                   className="w-full rounded-lg shadow-lg"
                 />
@@ -274,7 +275,7 @@ const Project1 = () => {
               
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/9fe0c1e6-d116-4962-90d3-11113a893f5b.png" 
+                  src={asset("lovable-uploads/9fe0c1e6-d116-4962-90d3-11113a893f5b.png")}
                   alt="Reload Simulator Documentation"
                   className="w-full rounded-lg shadow-lg"
                 />
