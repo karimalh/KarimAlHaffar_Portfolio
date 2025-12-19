@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/utils/asset";
 
 const CADProject2 = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const CADProject2 = () => {
             <div className="mb-12">
               <div className="aspect-video bg-muted/30 rounded-2xl overflow-hidden border border-border">
                 <img
-                  src="/lovable-uploads/stirling-engine.gif"
+                  src={asset("lovable-uploads/stirling-engine.gif")}
                   alt="Stirling Engine CAD Assembly Animation"
                   className="w-full h-full object-cover"
                 />
