@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/utils/asset";
 
 const Project6 = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const Project6 = () => {
           {/* Hero image */}
           <div className="mb-12">
             <img 
-              src="/lovable-uploads/caccaaaa-cb02-4d05-bd99-1f3a987d4ed0.png" 
+              src={asset("lovable-uploads/caccaaaa-cb02-4d05-bd99-1f3a987d4ed0.png")}
               alt="Autonomous Maze Exploration with Object Recognition"
               className="w-full h-[400px] object-cover rounded-lg"
             />
@@ -84,7 +85,7 @@ const Project6 = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/23034746-f2aa-4a35-9ab2-44047b3e7295.png" 
+                src={asset("lovable-uploads/23034746-f2aa-4a35-9ab2-44047b3e7295.png")} 
                 alt="Robot Configuration"
                 className="w-full max-w-md mx-auto rounded-lg"
               />
@@ -102,7 +103,7 @@ const Project6 = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/caccaaaa-cb02-4d05-bd99-1f3a987d4ed0.png" 
+                src={asset("lovable-uploads/caccaaaa-cb02-4d05-bd99-1f3a987d4ed0.png")}
                 alt="Navigation Strategy"
                 className="w-full rounded-lg"
               />
