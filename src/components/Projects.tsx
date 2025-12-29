@@ -3,6 +3,13 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
+      title: "Onshape Pen Pal",
+      description: "Automated pen dispenser + QR-based data collection (capstone).",
+      image: "lovable-uploads/pen-pal-hero.png",
+      link: "/project-9",
+    },
+
+    {
       title: "Reload Simulator (Lexington Medical)",
       subtitle: "Designed and validated a reload simulator fixture saving $140,000 USD per DV test.",
       image: "lovable-uploads/db411516-f38f-4da7-8ec4-2c9ae4721f61.png",
