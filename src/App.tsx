@@ -14,6 +14,7 @@ import Project5 from "./pages/Project5";
 import Project6 from "./pages/Project6";
 import Project7 from "./pages/Project7";
 import Project8 from "./pages/Project8";
+import Project9 from "./pages/Project9";
 import CADProject1 from "./pages/CADProject1";
 import CADProject2 from "./pages/CADProject2";
 import NotFound from "./pages/NotFound";
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/project-6" element={<Project6 />} />
             <Route path="/project-7" element={<Project7 />} />
             <Route path="/project-8" element={<Project8 />} />
+            <Route path="/project-9" element={<Project9 />} />
             <Route path="/cad-project-1" element={<CADProject1 />} />
             <Route path="/cad-project-2" element={<CADProject2 />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
