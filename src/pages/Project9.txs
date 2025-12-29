@@ -233,6 +233,32 @@ const Project9 = () => {
               end-to-end engineering and product thinking.
             </p>
           </section>
+          <section className="mb-12">
+            <h2 className="heading-2 mb-8">Project Documentation</h2>
+          
+            <p className="body-large text-muted-foreground leading-relaxed mb-6">
+              The full design report below documents the mechanical design process,
+              system architecture, validation, and final outcomes of the Onshape Pen Pal
+              project.
+            </p>
+          
+            <div className="w-full h-[80vh] rounded-lg overflow-hidden border shadow-md mb-4">
+              <iframe
+                src={asset("lovable-uploads/onshape-pen-pal.pdf")}
+                title="Onshape Pen Pal Design Report"
+                className="w-full h-full"
+              />
+            </div>
+          
+            <a
+              href={asset("lovable-uploads/onshape-pen-pal.pdf")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:underline"
+            >
+              Open PDF in new tab
+            </a>
+          </section>
 
           <div className="pt-8 border-t">
             <Link
