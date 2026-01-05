@@ -16,6 +16,9 @@ const Project9 = () => {
   const driveVideoPreview =
     "https://drive.google.com/file/d/14hQnnbwrV7qgeh8xqUDztozsEBcEErVG/preview";
 
+  // Option 1: shrink ALL Project 9 images by 60% (i.e., show at 40% width)
+  const imgClass = "w-[40%] mx-auto rounded-lg shadow-md";
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container-custom py-8">
@@ -77,16 +80,16 @@ const Project9 = () => {
             </div>
           </div>
 
-          {/* HERO IMAGE (UPDATED) */}
+          {/* HERO IMAGE (MAIN stays PNG) */}
           <section className="mb-12">
             <div className="mb-8">
               <img
                 loading="lazy"
                 src={img("penpal_front.png")}
                 alt="Onshape Pen Pal front view"
-                className="w-full rounded-lg shadow-md"
+                className={imgClass}
               />
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-sm text-muted-foreground mt-2 text-center">
                 Front view of the Pen Pal prototype
               </p>
             </div>
@@ -119,11 +122,11 @@ const Project9 = () => {
                 <img
                   src={img("Penpal_arm.jpeg")}
                   alt="Pen Pal robotic arm"
-                  className="w-full rounded-lg shadow-md"
+                  className={imgClass}
                   loading="lazy"
                 />
-                <p className="text-sm text-muted-foreground mt-2">
-                  Robotic arm subsystem (Penpal_arm.png)
+                <p className="text-sm text-muted-foreground mt-2 text-center">
+                  Robotic arm subsystem (Penpal_arm.jpeg)
                 </p>
               </div>
             </div>
@@ -139,13 +142,13 @@ const Project9 = () => {
 
               <div className="mb-8">
                 <img
-                  src={img("Penpal_Structure.png")}
+                  src={img("Penpal_Structure.jpeg")}
                   alt="Pen Pal structural frame and enclosure"
-                  className="w-full rounded-lg shadow-md"
+                  className={imgClass}
                   loading="lazy"
                 />
-                <p className="text-sm text-muted-foreground mt-2">
-                  Structure + enclosure (Penpal_Structure.png)
+                <p className="text-sm text-muted-foreground mt-2 text-center">
+                  Structure + enclosure (Penpal_Structure.jpeg)
                 </p>
               </div>
             </div>
@@ -161,13 +164,13 @@ const Project9 = () => {
 
               <div className="mb-8">
                 <img
-                  src={img("Penpal_dispensing.png")}
+                  src={img("Penpal_dispensing.jpeg")}
                   alt="Pen Pal pen dispensing mechanism"
-                  className="w-full rounded-lg shadow-md"
+                  className={imgClass}
                   loading="lazy"
                 />
-                <p className="text-sm text-muted-foreground mt-2">
-                  Dispensing mechanism (Penpal_dispensing.png)
+                <p className="text-sm text-muted-foreground mt-2 text-center">
+                  Dispensing mechanism (Penpal_dispensing.jpeg)
                 </p>
               </div>
             </div>
@@ -184,13 +187,13 @@ const Project9 = () => {
 
               <div className="mb-8">
                 <img
-                  src={img("Penpal_data.png")}
+                  src={img("Penpal_data.jpeg")}
                   alt="Pen Pal data pipeline diagram"
-                  className="w-full rounded-lg shadow-md"
+                  className={imgClass}
                   loading="lazy"
                 />
-                <p className="text-sm text-muted-foreground mt-2">
-                  Data pipeline & control flow (Penpal_data.png)
+                <p className="text-sm text-muted-foreground mt-2 text-center">
+                  Data pipeline & control flow (Penpal_data.jpeg)
                 </p>
               </div>
             </div>
