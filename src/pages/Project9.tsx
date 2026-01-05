@@ -117,7 +117,7 @@ const Project9 = () => {
 
               <div className="mb-8">
                 <img
-                  src={img("Penpal_arm.png")}
+                  src={img("Penpal_arm.jpeg")}
                   alt="Pen Pal robotic arm"
                   className="w-full rounded-lg shadow-md"
                   loading="lazy"
