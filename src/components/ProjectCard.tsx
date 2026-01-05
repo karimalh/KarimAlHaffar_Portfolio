@@ -5,7 +5,6 @@ interface ProjectCardProps {
   title: string;
   subtitle: string;
   image?: string;
-  hoverImage?: string; // optional hover GIF/image
   bullets?: string[];
   tags?: string[];
   githubUrl?: string;
@@ -18,7 +17,6 @@ const ProjectCard = ({
   title,
   subtitle,
   image,
-  hoverImage,
   bullets = [],
   tags = [],
   githubUrl,
@@ -32,39 +30,15 @@ const ProjectCard = ({
         !disabled ? "hover-lift cursor-pointer" : "cursor-not-allowed opacity-75"
       }`}
     >
-      {/* IMAGE / GIF PREVIEW */}
-      <div className="aspect-video bg-muted relative overflow-hidden flex items-center justify-center">
+      {/* IMAGE PREVIEW */}
+      <div className="aspect-video bg-muted flex items-center justify-center">
         {image ? (
-          <>
-            {/* Default static image */}
-            <img
-              src={image}
-              alt={title}
-              className={`w-full h-full object-cover transition-opacity duration-300 ${
-                hoverImage ? "group-hover:opacity-0" : ""
-              }`}
-              loading="lazy"
-            />
-
-            {/* Hover GIF (zoomed OUT, no crop) */}
-            {hoverImage && (
-              <img
-                src={hoverImage}
-                alt={`${title} preview animation`}
-                className="
-                  absolute inset-0
-                  w-full h-full
-                  object-contain
-                  p-2
-                  bg-muted
-                  opacity-0
-                  group-hover:opacity-100
-                  transition-opacity duration-300
-                "
-                loading="lazy"
-              />
-            )}
-          </>
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         ) : (
           <div className="text-center p-8">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -87,7 +61,7 @@ const ProjectCard = ({
         )}
       </div>
 
-      {/* CARD CONTENT */}
+      {/* CARD BODY */}
       <div className="p-6">
         <h3 className="heading-3 mb-2">{title}</h3>
         <p className="text-muted-foreground mb-4">{subtitle}</p>
@@ -148,10 +122,10 @@ const ProjectCard = ({
     </div>
   );
 
-  // Wrap card in Link when navigable (required for hover GIF)
+  // Wrap card in Link when navigable
   if (projectUrl && !disabled) {
     return (
-      <Link to={projectUrl} className="block group">
+      <Link to={projectUrl} className="block">
         {CardContent}
       </Link>
     );
